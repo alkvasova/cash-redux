@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {createStore} from "redux";
+import { Provider } from 'react-redux';
+
 //import reportWebVitals from './reportWebVitals';
 
 const defaultState = {
-    cash: 0,
+    cash: 5,
 }
 
 //action = {type: "", payload: ""}

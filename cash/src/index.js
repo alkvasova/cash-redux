@@ -4,28 +4,8 @@ import './index.css';
 import App from './App';
 import {createStore} from "redux";
 import { Provider } from 'react-redux';
-
-//import reportWebVitals from './reportWebVitals';
-
-const defaultState = {
-    cash: 5,
-}
-
-//action = {type: "", payload: ""}
-
-const reducer = (state = defaultState, action) => {
-    switch (action.type) {
-        case "ADD_CASH":
-            return {...state, cash: state.cash + action.payload}
-        case "GET_CASH":
-          return {...state, cash: state.cash - action.payload}
-      default: 
-          return state
-    }
-}
-
-const store = createStore(reducer)
-
+import reportWebVitals from './reportWebVitals';
+import {store} from "./store";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -40,4 +20,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+reportWebVitals();

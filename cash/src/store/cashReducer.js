@@ -1,3 +1,6 @@
+
+
+
 const defaultState = {
     cash: 5,
 }
